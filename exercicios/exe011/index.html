@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <H1>Imagens Dinâmicas</H1>
+    <p>tente abrir esse site em varios dispositivos diferentes
+        os simplesmente o tamanho do seu navegador.
+    </p>
+    <picture><!--imgs p/ abrir em varios dispositivos usa-se picture e souce media type dentro dele-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel"><!--a primeira imagem é com (img src alt depois com source)-->
+        
+    </picture>
+    
+</body>
+</html> 

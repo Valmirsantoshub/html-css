@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto </title>
+    <style>
+        body{
+            font: 12pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1><ins>O grande passo</ins></h1>
+    <p>Este é um dos meus primeiros projeto em<mark> HTML5.</mark></p>
+    <p>Esta é uma imagem  dinâmica que se adapta em três tamanhos,<br>dierentes dependendo de cada dispositivo usado.</p>
+    
+    <div class="container"><!--para alinhar um texto da imagem usa-se div class container display flex-->
+       
+        <p>Este é um parágrafo com uma imagem.</p>
+    <img src="imagens4/foto-timão-P.png" title="Timão"style="float: right;">
+
+
+    </div>
+
+    
+
+    
+    <Picture>
+        aqui vai um emoji.
+        <p style="font-size: 100px;">&#128526;</p>
+
+        <source media="(max-width:750px)"  srcset="imagens4/foto-leão-P.jpg"  type="image/jpg">
+        <source media="(max-width:1050px)" srcset="imagens4/foto-average.jpg" type="image/jpg">
+        <img src="imagens4/foto-big.jpg"  title="paisagem"alt="foto flexivel">
+    </Picture>
+
+    <!--<audio src="midia/gangstas-paradise.mp3" controls></audio><!-->
+    
+    <video controls poster="imagens4/foto-Leão-P.JPG">
+        <source src="midia/meu-video.mkv"  type="video/mkv">
+        <source src="midia/meu-video-ogg"  type="video/ogg">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/Meu-Video.Mp4"  type="video/Mp4" >
+
+    </video>
+   
+    
+    <ul>
+        <li><a href="http://www.linkedin.com/in/valmir-santos" target="_blank" rel="external">meu linkedin</a></li>
+
+        <li><a href="https://www.youtube.com/channel/UC8Iqi7EJJ4CU7kt8RNCRG-w"target="_blank" rel="external">minha conta do youtube</a></li>
+
+
+        <li><a href="https://github.com/Valmirsantoshub" target="_blank" rel="external">link de acesso ao meu GITHUB</a></li>
+
+        <li> Email:<a href="mailto:valmirmoreira31@hotmail.com">valmirmoreira31@hotmail.com</a></a></li>
+            
+    </ul>
+    
+    
+</body>
+<script>
+    alert("Bem-vindo ao meu site!");
+   var res= prompt("está gostando da nossa companhia.?")
+    if(res =="sim"){
+        alert("obrigado pela sua avaliação estamos muito felizes.")
+        }else if(res == "não"){
+            alert("tudo bem, lamentamos por esse inconveniente, trabalharemos para melhorar a sua visita.")
+
+    }
+   var nome = prompt(" digite seu nome:")
+   alert(`olá ${nome.toUpperCase()} seja bem vindo! é um prazer em ter você aqui conosco.`)
+
+</script>
+<p> Copyright &copy; Mestre Java</p>
+</html>
