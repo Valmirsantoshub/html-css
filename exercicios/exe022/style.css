@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+/*em HTML id = em CSS #
+em HTML class = em CSS .class */
+
+body {
+    background-color: #bee0c2;
+    font-family:Arial, Helvetica, sans-serif sans-serif;
+}
+h1{
+    color: #11057e;
+
+}
+h1#principal{
+    text-align: center;
+    background-color: green;
+    color:#fff;
+
+}
+h2{
+    color: hsl(115, 65%, 62%);
+}
+.basico{
+    color: red;
+    display: flex;
+    margin: auto 960px;
+   width: 300px;
+}
+.intermediario{
+    color: blue;
+    display: flex;
+    justify-content: center;
+
+}
+.avancado{
+    color: purple;
+
+}
+.p{
+    display: flex;
+    width: 300px;
+}
+#p1{
+    justify-content: center;
+    width: 300px;
+    margin: auto;
+}
+#p2{
+    width: 300px;
+    display: flex;
+    margin: auto 960px;
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto Hover 2</title>
+    <style>
+          /*# = id
+          . = classe
+          * = todos os elementos
+          : =pseudo-classes
+          :: = pseudo-elementos
+          > = childrens
+          */
+          
+
+        body{
+            background-color: #fff;
+        }
+        a{
+            color:blue;
+            text-decoration: none;/* oculta o sublinhado*/
+            font-weight: bold;
+        }
+        a:visited{ /* apos visitado o link muda de cor a que eu escolher*/
+            color: purple; 
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;/*quando passa o mouse em cima aparece o sublinhado*/
+        }
+        a:active{
+            color: yellow; /*quando pressionado muda de cor*/
+
+        }a::before{ /* pseudo elemento coloca duas vzs dois pontos(::)*/
+            content: '⇒';
+            
+
+        }
+        
+        a::after{
+            content:  " ⇐ "; /*  "(link)";colocando a palavra link do lado do link*/
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>projeto Hover 2</h1>
+    <ul>
+        <li><a href="https://github.com/Valmirsantoshub/html-css">meu repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UC8Iqi7EJJ4CU7kt8RNCRG-w">meu perfil no youtube</a></li>
+        <li><a href="https://x.com/Bolsopanico">meu perfil no twitter</a></li>
+    </ul>
+</body>
+</html>

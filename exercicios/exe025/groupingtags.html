@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            background-color: dimgrey;
+             font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header{
+            background-color: rgb(248, 241, 241);
+            padding: 10px;
+            margin: 10px;
+
+        }
+        main{
+            background-color: rgb(248, 241, 241);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+            box-shadow: 1px 1px 1px black;
+
+        }
+        article > aside{
+            background-color: rgb(116, 112, 112);
+        }
+        footer{
+            background-color: rgb(3, 0, 0);
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 4px;
+        }
+        h1{
+            text-align: center;
+        }
+        nav {
+            background-color: rgb(190, 187, 187);
+            box-shadow: 1px 1px 1px black;
+            
+        }
+        nav > a{
+            text-decoration: none;
+            margin: 20px;
+
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        footer >p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grouping tags</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>esporte tecnologia</p>
+
+        </section>
+        <section id="noticias">
+            <p>politica</p>
+            <article>
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ducimus vel aut, mollitia asperiores harum ipsum sit accusamus ratione. Nihil ea cum recusandae. Temporibus provident vero, sequi suscipit libero dignissimos!</p>
+                <aside>
+                    <p>artigo escrito por valmir dos santos</p>
+                </aside>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p> <em>desenvolvido por valmir dos santos o mestre java</em></p>
+
+    </footer>
+    
+</body>
+</html>

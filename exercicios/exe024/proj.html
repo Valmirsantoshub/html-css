@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto hover</title>
+    <style>
+        div > p{  /*oculta alguns textos de um "menu"*/
+            display: none;
+            
+           
+           
+        
+        
+        }
+        div:hover{/* mudo a cor da minha preferencia*/
+            color: purple;
+            width: 200px;/* largura */
+            font-weight: bold;/* deixo em negrito*/
+            
+        }
+        div:hover >p{
+            display:block; /* mostra textos ocutos*/
+            cursor: pointer;/* deixa clicavel*/
+            font-weight: bold;
+
+            
+        }
+        h1{
+            background-color: yellow;
+            width: 200px;
+        
+            
+        
+        }
+        menu{
+            font-weight: bold;
+            
+        }div >img{
+            display:inline;
+        }
+    
+       
+    </style>
+</head>
+<body>
+    <h1>Projeto hover</h1>
+     <!--inline level quebra a caixa não ocupa todo espaço da caixa-->
+     Menu
+    <div>         
+         <!--box level ocupa todo o espaço da caixa-->
+        
+         <img src="imagens/menu-png.png" alt="image/png">
+            <p>missão</p>
+            <p>ação</p>
+            <p>contato</p>
+            <p>gestão</p>
+            <p>valores</p>
+        
+
+    </div>
+    
+</body>
+</html>
