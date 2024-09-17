@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="verificar(); return false;">
+        <input type="text" id="txtdia" placeholder="Dia"><br>
+        <input type="text" id="txtmes" placeholder="Mês"><br>
+        <input type="text" id="txtano" placeholder="Ano"><br>
+        <input type="text" id="email" placeholder="Email"><br>
+        <input type="text" id="nome" placeholder="Nome"><br>
+        <input type="password" id="senha" placeholder="Senha"><br>
+        <button type="submit">Verificar</button>
+    </form>
+    
+</body>
+<script>
+    function verificar() {
+    var dia = document.getElementById('txtdia').value;
+    var mes = document.getElementById('txtmes').value;
+    var ano = document.getElementById('txtano').value;
+    var email = document.getElementById('email').value;
+    var nome = document.getElementById('nome').value;
+    var senha = document.getElementById('senha').value;
+    var agora = new Date();
+    var anoAtual = agora.getFullYear();
+    var mesAtual = agora.getMonth() + 1; // getMonth() retorna 0-11, então adicionamos 1
+    var diaAtual = agora.getDate();
+
+    // Verificação da data de nascimento
+    if (ano < 1980 || ano > anoAtual || (ano == anoAtual && mes > mesAtual) || (ano == anoAtual && mes == mesAtual && dia > diaAtual)) {
+        alert('Data de nascimento inválida');
+        return;
+    }
+
+    // Verificação de idade
+    var idade = anoAtual - ano;
+    if (mes > mesAtual || (mes == mesAtual && dia > diaAtual)) {
+        idade--;
+    }
+    if (idade < 18 || idade > 100) {
+        alert('Idade inválida');
+        return;
+    }
+
+    // Verificação de email
+    if (email != "valmirmoreira31@hotmail.com") {
+        alert('Email incorreto');
+        return;
+    }
+
+    // Verificação de senha
+    if (senha != "123456") {
+        alert('Senha incorreta');
+        return;
+    }
+
+    // Verificação de nome
+    if (nome != "valmir santos") {
+        alert('Nome incorreto');
+        return;
+    }
+
+    // Redirecionamento se todas as verificações passarem
+    window.location.href = "outra_pagina.html";
+}
+
+</script>
+</html>
