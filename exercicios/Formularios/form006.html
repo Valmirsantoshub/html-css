@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Exemplo de  Formulario</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <label for="icor"> Cor</label>
+        <input type="color" name="Cor" id="icor" value="#00ff00"><br><br>  <!--botao de cor input type="color"-->
+
+        <label for="inumero">Nivel de Satisfação</label> <!--botao de nivel de satisfacao input range-->
+        <input type="range" name="numero" id="inumero"min="0" max="10" value="5" oninput="ivalor.innerHTML= Number(inumero.value)">
+       <output id="ivalor">5</output><br><br> 
+
+
+
+
+
+        <label for="iimagem">Imagem</label>
+         <input type="file" name="imagem" id="iimagem" required> <!--botao de imagem input file -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    
+</body>
+</html>

@@ -17,8 +17,13 @@ body {
    
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    
   
 }
+/*::-webkit-scrollbar{  comnado para ocultar a barra de rolagem lateral
+    width: 0px;
+    height: 0px;
+}*/
 
 header {
     background-image: linear-gradient(to bottom, var(--color4), var(--color5));
@@ -86,12 +91,14 @@ aside a {
 
 }
 
-aside>ul li {
+aside > ul li {
 
     background-color: #333;
     color: white;
-    padding-top: 20px;
+  
+    padding-top: 10px;
     line-height: .5em;
+    
 
 }
 
@@ -161,8 +168,11 @@ section#img02 {
 .conteudo img {
     width: 30px;
     height: 30px;
-    
+    border-radius: 50%;
     list-style-type: none;
+}
+.conteudo img:hover{
+    transform: scale(1.2);
 }
 .conteudo div{
     display: flex;
