@@ -3,5 +3,6 @@
 /*ESTILO RETRATO EM PE (PORTRAIT)*/
 body{
     background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
     
 }
