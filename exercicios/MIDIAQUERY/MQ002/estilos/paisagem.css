@@ -1,0 +1,5 @@
+@charset "UTF-8";
+/*ESTILO PAISAGEM DEITADO (LANDSCAPE)*/
+body{
+    background-image: url(../imagens/cev-landscape.jpg);
+}
