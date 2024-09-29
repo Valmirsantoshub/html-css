@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Responsivo</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1> Site Responsivo</h1>
+        <img src="imagens/icons8-cardápio-50.png" alt="imagem/png" onclick="clicar()">
+        <menu id="itens">
+            <ul>
+            
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Missão</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Tecnologia</a></li>
+                
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Query Responsivo</h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum obcaecati harum iusto pariatur, perferendis neque ex saepe quasi tempore vitae, repellat explicabo beatae nam accusamus asperiores quis? Autem, omnis tempore?</p><br>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aliquam nemo harum quam laudantium. Excepturi illum laudantium, doloribus officia dolores, doloremque, cupiditate alias incidunt iure eaque ipsam est possimus magnam.</p><br>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem a quisquam cupiditate eum debitis eos fugiat, voluptate, similique iure magni mollitia accusamus. Commodi ipsa sequi quasi voluptatem, voluptas ex?</p><br>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit tenetur explicabo repellendus magnam, minima eveniet? Quam ipsam nobis at voluptas, deserunt ab. Eum quidem alias debitis ad delectus quibusdam!</p><br>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum alias libero architecto quis iusto ducimus pariatur, quo officiis illum et perspiciatis ea fuga quasi, eaque amet provident. Quam, adipisci!</p><br>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim qui totam minima voluptate ullam aut inventore dolor! Quibusdam magnam pariatur laborum nemo iusto provident consequuntur ea. Nihil repellendus pariatur consequatur!</p>
+
+        </article>
+    </main>
+
+    
+</body>
+<script>
+    function clicar(){
+        // alert("Clicou no menu");
+        // itens.style.display ="block"
+        if(itens.style.display =="block"){
+            itens.style.display = "none"
+        }else{
+            itens.style.display = "block"
+        }
+
+    }
+</script>
+</html>
