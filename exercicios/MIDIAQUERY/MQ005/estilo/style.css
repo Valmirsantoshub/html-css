@@ -28,10 +28,13 @@ menu >ul >li >a{
     background-color: rgb(87, 87, 87);
     color: white;
     border-top: 2px solid rgba(128, 128, 128, 0.815);
+    border-radius: 6px;
+    margin-left: 20px;
 }
 menu >ul >li >a:hover{
     background-color: rgba(70, 69, 67, 0.87);
     transition-duration: .5s;
+   
 
 }
 main{
