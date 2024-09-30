@@ -5,23 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo de hover</title>
     <style>
+        *{
+            margin: 0 px;
+            padding: 0px;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        div:hover {
+        header:hover {
             color: red;
             margin: 20px;
             
            
 
-        }
-        section{
-            background-color: rgb(13, 17, 224);
-            height: 500px;
-            
-            
-   
-           
         }
         h1{
             text-align: center;
@@ -29,23 +25,28 @@
           
 
         
-        div:hover > p{
-            display: block;
+        header:hover > a{
+            display:  inline-block;
             color: rgb(8, 0, 0);
-            margin: 20px;
-            width: 150px;
+            margin: 10px;
+            /* width: 150px; */
             cursor: pointer;
             font-weight: bold;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            width: 100px;
            
         }
-        div > p{
+        header > a{
             display: none;
-            margin: 20px;
+            margin: 10px;
             
             
         }
         h3{
             margin: 20px;
+            display: block;
         }
         h2{
             padding: 20px;
@@ -57,19 +58,17 @@
 <body>
     <h1>Exemplo de hover</h1>
     
-        <section>
+       
             <h2>passe o mouse sobre o texto abaixo</h2>
-            
-            <div>
+            <header>    
+        
                 <h3>Menu</h3>
-                <p>texto..</p>.<br>
-                <p>carreiras</p><br>
-                <p>contato</p><br>
-                <p>quem somos</p><br>
-                <p>missão</p>
-      
-            </div><br>
-        </section>
+                <a href="">texto..</a>
+                <a href="">carreiras</a>
+                <a href="">contato</a>
+                <a href="">quem somos</a>
+                <a href="">missão</a>
+            </header>
        
                
         

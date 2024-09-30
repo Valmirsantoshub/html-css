@@ -31,6 +31,7 @@ menu >ul >li >a{
 }
 menu >ul >li >a:hover{
     background-color: rgba(70, 69, 67, 0.87);
+    transition-duration: .5s;
 
 }
 main{
@@ -53,7 +54,7 @@ img{
     cursor: pointer;
     display: block;
     margin: auto;
-    border-radius: 1px;
+    
     
   
 }
