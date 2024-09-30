@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
     img{
         display: none;
     }
@@ -14,4 +14,4 @@
         width: 768px;
     }
     
-}
+} 
