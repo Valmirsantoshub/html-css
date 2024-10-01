@@ -91,13 +91,14 @@ aside a {
 
 }
 
-aside > ul li {
+aside > ul > li {
 
     background-color: #333;
     color: white;
   
     padding-top: 10px;
     line-height: .5em;
+    margin: 10px 0px;
     
 
 }
